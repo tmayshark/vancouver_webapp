@@ -5,11 +5,27 @@
   <title>Vancouver Mulligan</title>
 </head>
 <body>
-<img align="center" src="http://i.imgur.com/yDbUVZe.jpg">
+<img align="center" src="http://i.imgur.com/vE9rkVZ.jpg">
 </body>
+<link rel="stylesheet" type="text/css" href="<%= url("/modal.css")%>">
+<br/>
+<a href="#openModal"><img src="http://i.imgur.com/9DRtcS8.jpg">WTF INSTRUKIONS?</a>
+
+<div id="openModal" class="modalDialog">
+  <div>	<a href="#close" title="Close" class="close">X</a>
+
+    <h2>Mulligan simulator</h2>
+
+    <p>Input the number of ramp spells and low-curve spells in your deck.</p>
+    <p>We'll have some mechanical turks working for pennies on the dollar shuffle real decks for you.</p>
+    <p>Then we'll give you some meaningless, arbitrary statistics about how many decent hands you'll see.</p>
+    <p>Easy! Don't be a jerk. This is hosted on a free tier heroku box.</p>
+    <p>If you want to write some unit tests or something for me, github/tmayshark</p>
+  </div>
+</div>
 <div class="form-style-3">
   <form action="/mull/" method="POST">
-    <fieldset><legend>Personal</legend>
+    <fieldset><legend>IMPORTANT PARAMETERS AND STUFF</legend>
       <label for="ramp"><span>Ramp Spell Count: <span class="required">*</span></span><input type="text" class="input-field" name="ramp" value="5" /></label>
       <label for="curve"><span>Low-Curve Spell Count: <span class="required">*</span></span><input type="text" class="input-field" name="curve" value="15" /></label>
       <input type="submit" value="Submit" /></label>
