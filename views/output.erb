@@ -1,0 +1,18 @@
+<link rel="stylesheet" type="text/css" href="<%= url("/style.css")%>">
+<div class="datagrid" width="800px">
+  <table align="center">
+    <% @stats.each do |stat| %>
+        <tr>
+          <td>
+            Land count: <%= stat[:land_count] %>
+          </td>
+          <td>
+            Percentage of hands kept: <%= stat[:stats][:percent_kept] %>
+          </td>
+          <td>
+            Average cards in hand: <%= stat[:stats][:kept_cards] %>
+          </td>
+        </tr>
+    <% end %>
+  </table>
+</div>
