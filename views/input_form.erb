@@ -1,15 +1,20 @@
+<link rel="stylesheet" type="text/css" href="<%= url("/form_style.css")%>">
+
 <html>
 <head>
   <title>Vancouver Mulligan</title>
 </head>
-
 <body>
-<form action="/mull/" method="POST">
-  Number of ramp spells: <input type="text" name="ramp">
-  <br/>
-  Number of low-curve spells: <input type="text" name="curve">
-  <br/>
-  <input type="submit">
-</form>
+<img align="center" src="http://i.imgur.com/yDbUVZe.jpg">
+</body>
+<div class="form-style-3">
+  <form action="/mull/" method="POST">
+    <fieldset><legend>Personal</legend>
+      <label for="ramp"><span>Ramp Spell Count: <span class="required">*</span></span><input type="text" class="input-field" name="ramp" value="5" /></label>
+      <label for="curve"><span>Low-Curve Spell Count: <span class="required">*</span></span><input type="text" class="input-field" name="curve" value="15" /></label>
+      <input type="submit" value="Submit" /></label>
+    </fieldset>
+  </form>
+</div>
 </body>
 </html>
