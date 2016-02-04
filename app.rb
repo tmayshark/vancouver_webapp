@@ -3,7 +3,7 @@ require_relative './lib/smarter_mull'
 include Mulligan
 
 get '/' do
-  erb: :input_form
+  erb :input_form
 end
 
 get '/mull' do
