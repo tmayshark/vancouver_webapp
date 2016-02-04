@@ -49,7 +49,7 @@ module Mulligan
       keepable = true
     elsif hand.count('land') >= 3 && hand.count('low_curve') >= 1 && hand.size >= 5
       keepable = true
-    elsif hand.count('land') >= 2 && hand.count('ramp') >= 1 && hand.size >= 5
+    elsif hand.count('land') >= 3 && hand.count('ramp') >= 1 && hand.size >= 5
       keepable = true
     end
     keepable
